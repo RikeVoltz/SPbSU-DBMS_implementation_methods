@@ -1,0 +1,21 @@
+<title>Reusable Form Demo</title>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>{{ message[1] }}</li>
+            {% endfor %}</ul>
+    {% endif %}
+{% endwith %}
+<form action="" method="post">
+    {{ form.csrf }}
+    <div class="input date">
+        {{ form.load_date.label }} {{ form.load_date }}
+    </div>
+    <div class="input select">
+        {{ form.course_id.label }} {{ form.course_id }}
+    </div>
+    <div class="input submit">
+        <input type="submit" value="Submit"></div>
+</form>
