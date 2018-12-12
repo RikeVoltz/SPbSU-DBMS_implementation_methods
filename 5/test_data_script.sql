@@ -1,0 +1,33 @@
+INSERT INTO `SPbSU_log_analysis_system`.`User` (email, surname, name) VALUES ('ivan_petrov@email.com', 'Petrov', 'Ivan');
+INSERT INTO `SPbSU_log_analysis_system`.`Course` (title, russian_title, hash, user_id) VALUES ('ACADRU', 'Academicheskoe pismo', '9cdfb439c7876e703e307864c9167a15', 1);
+INSERT INTO `SPbSU_log_analysis_system`.`Log` (load_date, course_id) VALUES ('2018-05-05', 1);
+INSERT INTO `SPbSU_log_analysis_system`.`Module` (number, hash, log_id) VALUES (1, '1147fed8ea112ec72554e0ba2742f234', 1);
+INSERT INTO `SPbSU_log_analysis_system`.`Lesson` (number, hash, link, module_id) VALUES (1, '41df0f088fcc2e16ff5bb349470a7c8c', 'some/lesson/link/1', 1);
+INSERT INTO `SPbSU_log_analysis_system`.`Lesson` (number, hash, link, module_id) VALUES (2, 'fb88b496e2a1034514005299b5ff6b7d', 'some/lesson/link/2', 1);
+INSERT INTO `SPbSU_log_analysis_system`.`Lesson` (number, hash, link, module_id) VALUES (3, '1c867fa95aa62f58a6588cb3efc79d35', 'some/lesson/link/3', 1);
+INSERT INTO `SPbSU_log_analysis_system`.`Video` (number, chart_link, materials_viewed, users_watched, is_most_viewed, link, lesson_id) VALUES (1, 'some/chart/link/1', 43.1, 77.9, 0, 'some/video/link/1', 1);
+INSERT INTO `SPbSU_log_analysis_system`.`Video` (number, chart_link, materials_viewed, users_watched, is_most_viewed, link, lesson_id) VALUES (1, 'some/chart/link/11', 13.0, 38.5, 1, 'some/video/link/11', 3);
+INSERT INTO `SPbSU_log_analysis_system`.`Test` (number, hash, lesson_id) VALUES (1, 'cf2d6fe852e5857c20681547a87d327c', 2);
+INSERT INTO `SPbSU_log_analysis_system`.`Test` (number, hash, lesson_id) VALUES (1, 'e8de3184301e40aa0c674142a077465b', 3);
+INSERT INTO `SPbSU_log_analysis_system`.`Attempt` (number, average_grade, median_grade, max_grade, number_of_solutions, test_id) VALUES (1, 3.0, 3.3, 11.0, 4, 1);
+INSERT INTO `SPbSU_log_analysis_system`.`Attempt` (number, average_grade, median_grade, max_grade, number_of_solutions, test_id) VALUES (2, 5.0, 5.0, 11.0, 1, 1);
+INSERT INTO `SPbSU_log_analysis_system`.`Attempt` (number, average_grade, median_grade, max_grade, number_of_solutions, test_id) VALUES (1, 10.0, 7.0, 20.0, 15, 2);
+INSERT INTO `SPbSU_log_analysis_system`.`Attempt` (number, average_grade, median_grade, max_grade, number_of_solutions, test_id) VALUES (2, 13.0, 6.0, 20.0, 23, 2);
+INSERT INTO `SPbSU_log_analysis_system`.`Attempt` (number, average_grade, median_grade, max_grade, number_of_solutions, test_id) VALUES (3, 16.0, 8.0, 20.0, 6, 2);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (1, 33.3, 1);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (2, 78.0, 1);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (3, 90.0, 1);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (1, 12.0, 2);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (2, 50.0, 2);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (1, 80.5, 3);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (2, 95.0, 3);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (3, 95.0, 3);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (4, 97.0, 3);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (1, 66.0, 4);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (1, 13.5, 5);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (2, 44.6, 5);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (3, 57.8, 5);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (4, 79.1, 5);
+INSERT INTO `SPbSU_log_analysis_system`.`Question` (number, right_answers_percent, attempt_id) VALUES (5, 88.8, 5);
+
+
